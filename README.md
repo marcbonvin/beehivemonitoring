@@ -1,9 +1,12 @@
 # beehivemonitoring
 
-# données sur le poids, la température interne et externe, l'humidité, acoustique
-# use anomaly detecction, selon certaines données, warning, notification
+données sur le poids, la température interne et externe, l'humidité, acoustique
+use anomaly detecction, selon certaines données, warning, notification
 
-# data from https://www.kaggle.com/datasets/se18m502/bee-hive-metrics
+data from https://www.kaggle.com/datasets/se18m502/bee-hive-metrics
 
-# 2 beehives : schartou & wurzburg
-# weight, humidity, temperature
+2 beehives : schartou & wurzburg
+weight, humidity, temperature
+
+Documentation
+https://observablehq.com/@observablehq/plot-line?collection=@observablehq/plot
