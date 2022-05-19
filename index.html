@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beehives Data Management</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.1/d3.min.js"></script>
@@ -13,23 +13,36 @@
 
 </head>
 <body>
+    <!-- insert image -->
+    <div class="container">
+        <img src="image.jpg" alt="Bees" width="1000" height="300">
+        <div class="topleft"></div>
+    </div>
+    <!-- WEIGHT CHART -->
     <div>
     <h1>WEIGHT EVOLUTION</h1>
-        <input type="checkbox" id="sch_weight" onclick="checkfunction()"
+        <div class="weight">
+        <checkboxes>
+            <input type="checkbox" id="sch_weight" onclick="checkfunction()"
             checked="true">Schwartau
-        <input type="checkbox" id="wur_weight" onclick="checkfunction()"
-        checked="true">Wurzburg
-        </div>
-    </div>
+        
+            <input type="checkbox" id="wur_weight" onclick="checkfunction()"
+            checked="true">Wurzburg
 
-    <div>
+        </checkboxes>
+        </div>
+    
+<!-- TEMPERATURE AND HUMIDITY CHART -->
+    
     <h1>TEMPERATURE AND HUMIDITY EVOLUTION</h1>
+        <div class="temp_hum">
         <input type="checkbox" id="weight">Schwartau
         <input type="checkbox" id="weight">Wurzburg<br>
         <input type="checkbox" id="weight">Temperature
         <input type="checkbox" id="weight">Humidity
+        </div>
+
     </div>
-  
     
 </body>
 </html>

@@ -1,0 +1,41 @@
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+
+
+.weight {
+    border: 2px solid rgb(255, 230, 6);
+    background-color: #f1f1f1;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.weight checkboxes {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+  }
+  
+.topleft {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 30px;
+  }
+  
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+
