@@ -35,3 +35,39 @@ function checkfunction(){
     else{ d3.select('.wur_weight').attr('opacity', 0)}
 
 }
+
+d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered_comma.csv",
+
+  // When reading the csv, I must format variables:
+function(d){
+    return { date : d3.timeParse("%Y-%m-%d")(d.date), value : d.value }
+},
+
+
+function(data){
+    // from https://d3-graph-gallery.com/graph/line_basic.html
+    // append the svg object to the weight section
+
+    var svg = d3.select(".weight")
+        .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+    var margin = {top: 10, right: 30, bottom: 30, left: 60},
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+    // add X axis
+
+    var x = d3.scaleTime()
+        .domain(d3.extent(data, function(d) { return d.date; }))
+        .range([ 0, width ]);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+            
+    
+})
