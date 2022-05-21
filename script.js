@@ -1,3 +1,48 @@
+var sch_hum, sch_temp, sch_weight, wur_hum, wur_temp, wur_weight
+
+min_date = new Date('2017-01-01 13:00:00')
+max_date = new Date('2019-01-01 13:00:00')
+
+var margin = {top: 80, right: 100, bottom: 30, left: 90},
+width = 1200 - margin.left - margin.right,
+height = 600 - margin.top - margin.bottom;
+
+lineInnerWidth = width - margin.left - margin.right;
+lineInnerHeight = height - margin.top - margin.bottom;
+
+console.log("a")
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Load all files before doing anything else
+    Promise.all([d3.csv('Data/schwartau/humidity_schwartau.csv'),
+                d3.csv('Data/schwartau/temperature_schwartau.csv'),
+                d3.csv('Data/schwartau/weight_schwartau.csv'),
+                d3.csv('Data/wurzburg/humidity_wurzburg.csv'),
+                d3.csv('Data/wurzburg/temperature_wurzburg.csv'),
+                d3.csv('Data/wurzburg/weight_wurzburg.csv')])
+                 .then(function(values){
+    
+                    sch_hum = values[0];
+                    sch_temp = values[1];
+                    sch_weight = values[2];
+                    wur_hum = values[3];
+                    wur_temp = values[4];
+                    wur_weight = values[5];
+
+                    //data preprocessing
+                    wur_temp = wur_temp.filter( a => {return a.temperature >0 })
+                    wur_temp = wur_temp.filter( a => {return new Date(a.timestamp) < max_date })
+                    wur_hum = wur_hum.filter( a => {return a.humidity >0 })
+                    sch_hum = sch_hum.filter( a => {return a.humidity >0 })
+                    wur_hum = wur_hum.filter( a => {return new Date(a.timestamp) < max_date })
+                    sch_temp = sch_temp.filter( a => {return a.temperature >0 })
+                    sch_temp = sch_temp.filter( a => {return new Date(a.timestamp) < max_date })
+                    sch_hum = sch_hum.filter( a => {return new Date(a.timestamp) < max_date })
+                    sch_weight = sch_weight.filter( a => {return new Date(a.timestamp) < max_date })
+                    wur_weight = wur_weight.filter( a => {return new Date(a.timestamp) < max_date })
+                    wur_temp = wur_temp.sort(function (a,b) {return d3.ascending(a.timestamp, b.timestamp); });
+
+
 // declaration of variables
 
 var sch_weight, wur_weight
