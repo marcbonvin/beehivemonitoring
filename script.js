@@ -116,3 +116,19 @@ function(data){
             
     
 })
+
+    // set the ranges
+    var x = d3.scaleTime().range([0, width]);
+    var y0 = d3.scaleLinear().range([height, 0]);
+    var y1 = d3.scaleLinear().range([height, 0]);
+
+    // define the 1st line
+    var valueline = d3.line()
+        .x(function(d) { return x(new Date(d.timestamp)); })
+        .y(function(d) { return y0(d.temperature); })
+        .curve(d3.curveMonotoneX);
+
+    // define the 2nd line
+    var valueline2 = d3.line()
+    .x(function(d) { return x(new Date(d.timestamp)); })
+    .y(function(d) { return y1(d.humidity); }).curve(d3.curveMonotoneX)
