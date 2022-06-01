@@ -5,7 +5,7 @@ use anomaly detection, selon certaines données, warning, notification
 
 data from https://www.kaggle.com/datasets/se18m502/bee-hive-metrics
 
-2 beehives : schwartau & wurzburg
+2 beehives : Schwartau & Wurzburg
 weight, humidity, temperature
 
 Documentation
