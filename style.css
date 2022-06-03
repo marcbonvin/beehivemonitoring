@@ -39,3 +39,28 @@ img {
     opacity: 1;
   }
 
+  svg {
+    border:1px solid gray;
+    border-radius:10px;
+    margin:5px;
+  }
+  input {
+    width:50px;
+  }
+  html {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  .grid line {
+    stroke:gray;
+    stroke-opacity: 0.5;
+    stroke-dasharray: 5,10;
+  }
+  
+  .grid path {
+    stroke-width: 0;
+  }
+
+  #wrapper {
+    margin:auto;
+    width:1440px;
+  }
