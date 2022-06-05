@@ -2,7 +2,7 @@
 var sch_hum, sch_temp, sch_weight, wur_hum, wur_temp, wur_weight
 
 min_date = new Date('2017-01-01 13:00:00')
-max_date = new Date('2019-01-01 13:00:00')
+max_date = new Date('2017-12-31 13:00:00')
 
 var margin = {top: 80, right: 100, bottom: 30, left: 90},
 width = 1200 - margin.left - margin.right,
