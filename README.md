@@ -2,7 +2,7 @@
 
 **Présentation du projet**
 
-Dans le cadre du cours "visulisation de données" donné par le professeur Isaac Pante, nous avons créer deux "linechart" (graphiques linéaires) interactifs. Le but de ce projet est de s'intéresser à trois type de données essentiels pour un apiculteur. Il s'agit de la température, le poids et l'humidité qui reigne dans la ruche. Ces données sont récoltées à l'aide de capteurs qui sont intégrés à la ruche et permettent à l'apiculteur de s'assurer de la bonne santé de l'essaim. Pour ce projet, nous avons utilisé des données issues de deux ruches qui se trouvent en Allemagne(https://www.kaggle.com/datasets/se18m502/bee-hive-metrics), mais à terme nous aimerions pouvoir réutiliser le script afin de pouvoir visualiser les données produites par notre propre ruche et qui se trouve en Valais.
+Dans le cadre du cours "visulisation de données" donné par le professeur Isaac Pante, nous avons créé deux "linechart" (graphiques linéaires) interactifs. Le but de ce projet est de s'intéresser à trois type de données essentiels pour un apiculteur. Il s'agit de la température, le poids et l'humidité qui reigne dans la ruche. Ces données sont récoltées à l'aide de capteurs qui sont intégrés à la ruche et permettent à l'apiculteur de s'assurer de la bonne santé de l'essaim. Pour ce projet, nous avons utilisé des données issues de deux ruches qui se trouvent en Allemagne(https://www.kaggle.com/datasets/se18m502/bee-hive-metrics), mais à terme nous aimerions pouvoir réutiliser le script afin de pouvoir visualiser les données produites par notre propre ruche et qui se trouve en Valais.
 
 
 
@@ -17,8 +17,8 @@ L'utilisateur a ensuite la possibilité d'afficher les données qui l'intéresse
 
 **Difficultées rencontrées**
 
-Nous avons principalement rencontré des difficultés au niveau des jeux de données. Un tri assez conséquent des données a été nécessaire pour que la visualisation fonctionne de manière convenable. Nous avons par exemple dû fortement réduire la quantité de données relatives au poids. En effet, le capteur était réglé pour prendre une mesure toutes les 5 minutes ce qui a considérablement augmenté le temps de chargement de la visualtion. Nous nous sommes donc limités à deux mesures par jour ce qui est largement suffisant. 
-Comme on peut le voir dans la visualisation de **à compléter** il y a une erreur dans les données. probablement que le capteur a connu un disfonctionnement. C'est des choses qui sont inévitable et qui faussent la visualisation. Malheureusement, on ne peut rien faire pour corriger cela à part être attentif aux variations étranges qui peuvent indiquer un problème au niveau de la prise de mesure.   
+Nous avons principalement rencontré des difficultés au niveau des jeux de données. Un tri assez conséquent des données été nécessaire pour que la visualisation fonctionne de manière convenable. Nous avons par exemple dû fortement réduire la quantité de données relatives au poids. En effet, le capteur était réglé pour prendre une mesure toutes les 5 minutes ce qui a considérablement augmenté le temps de chargement de la visualtion. Nous nous sommes donc limités à deux mesures par jour ce qui est, à notre sens, largement suffisant. 
+Comme on peut le voir dans la visualisation de **à compléter** il y a une erreur dans les données. probablement que le capteur a connu un disfonctionnement. C'est des choses qui sont inévitables et qui faussent la visualisation. Malheureusement, on ne peut rien faire pour corriger cela à part être attentif aux variations étranges qui peuvent indiquer un problème au niveau de la prise de mesure.   
  
 
 
