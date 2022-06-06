@@ -27,3 +27,5 @@ L'utilisateur a la possibilité d'afficher les données qui l'intéresse. Il peu
 Nous avons principalement rencontré des difficultés au niveau des jeux de données. Un tri assez conséquent des données été nécessaire pour que la visualisation fonctionne de manière convenable. Nous avons, par exemple, dû fortement réduire la quantité de données relatives au poids. En effet, le capteur était réglé pour prendre une mesure toutes les 5 minutes ce qui a considérablement augmenté le temps de chargement de la visualtion. Nous nous sommes donc limités à deux mesures par jour ce qui est, à notre sens, largement suffisant. De plus, les capteurs ont connu des disfonctionnement répétés. Nous avons donc décidé de supprimer les erreurs dans les données et de nous concentrer sur l'année 2017. 
 
 L'interraction rendue possible avec les checkbuttons a également été un défi. En effet, la programmation de ces derniers a nécessité plusieurs essai avant que le résultat soit convainquant. 
+
+Copyright : Manuel Garlinski, Marc Bonvin
