@@ -5,7 +5,7 @@
 Dans le cadre du cours "visulisation de données" enseigné par le professeur Isaac Pante, nous avons créé deux "linechart" (graphiques linéaires) interactifs. Le but de ce projet est de s'intéresser à trois type de données essentiels pour un apiculteur. Il s'agit de la température, du poids et de l'humidité qui reigne dans la ruche. Ces données sont récoltées à l'aide de capteurs qui sont intégrés à la ruche et permettent à l'apiculteur de s'assurer de la bonne santé de la colonie. Pour ce projet, nous avons utilisé des données issues de deux ruches (**Schwartau et Wurzburg**) qui se trouvent en Allemagne (https://www.kaggle.com/datasets/se18m502/bee-hive-metrics), mais à terme nous aimerions pouvoir réutiliser le script afin de pouvoir visualiser les données produites par notre propre rucher en Valais.
 
 
-**Explication de la visualisation:**
+**Explication de la visualisation**
 
 Nous avons décidé de séparer les données du poids de celles de la température et de l'humidité. En effet, le poids est une variable importante pour l'apiculteur. L'évolution de ce dernier permet de détecter rapidement certains problèmes qui surviennent (essaimage, pillage, ...). Il aide également à choisir le moment de la récolte du miel et les périodes lors desquelles la ruche doit être nourrie (périodes froides, météo peu clémente, ...). 
 
