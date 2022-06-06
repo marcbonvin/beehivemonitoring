@@ -11,7 +11,11 @@ Dans le cadre du cours "visulisation de données" enseigné par le professeur Is
 
 Nous avons décidé de séparer les données du poids de celles de la température et de l'humidité. En effet, le poids est une variable importante pour l'apiculteur. L'évolution de ce dernier permet de détecter rapidement certains problèmes qui surviennent (essaimage, pillage, ...). Il aide également à choisir le moment de la récolte du miel et les périodes lors desquelles la ruche doit être nourrie (périodes froides, ...).
 
+<img width="1222" alt="Capture d’écran 2022-06-06 à 13 58 17" src="https://user-images.githubusercontent.com/81250617/172156527-03378e17-a291-4cd5-b0ef-fc3fa2f69750.png">
+
 La comparaison des variables de la température et de l'humidité permet de pousser la surveillance plus loin et d'éviter certaines maladies par exemple. 
+
+<img width="1222" alt="Capture d’écran 2022-06-06 à 13 58 05" src="https://user-images.githubusercontent.com/81250617/172156569-d086d387-d401-4d3b-a235-9cca7b70ec76.png">
 
 L'utilisateur a la possibilité d'afficher les données qui l'intéresse. Il peut, par exemple, comparer la température qui règne au sein de la ruche de Wurzburg et celle de Schwartau en sélectionnant les boutons respectifs. Le But est de laisser le plus de liberté que possible à l'utilisateur afin qu'il puisse afficher les données qui lui semblent pertinentes. 
 
