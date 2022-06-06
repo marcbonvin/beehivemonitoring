@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     drawLineChart()
     checkfunc2()
     drawLineChart2()
+    checkfunc3()
 
     });
 
@@ -68,19 +69,11 @@ function checkfunc(){
     }
     else{ d3.select('.wur_weight').attr('opacity', 0)}
 
-    // check for temperature check box
-    if (document.getElementById("temperature").checked == true){
-        d3.select('.sch_temp').attr('opacitiy', 1)
-        d3.select('.wur_temp').attr('opacitiy', 1)
-    }
-    else{ d3.select('.sch_hum').attr('opacity', 0)
-            d3.select('.wur_hum').attr('opacity', 0)}
-
 }
 
 function checkfunc2(){
 
-    //check for Schwartau check box
+    //check for Schwartau checkbox
     if (document.getElementById('Schwartau').checked == true){
         d3.select('.sch_hum').attr('opacity' , 1)
         d3.select('.sch_temp').attr('opacity' , 1)
@@ -88,7 +81,7 @@ function checkfunc2(){
     else{  d3.select('.sch_hum').attr('opacity' , 0)
             d3.select('.sch_temp').attr('opacity' , 0)}
 
-    //check for Wurzburg check box
+    //check for Wurzburg checkbox
     if (document.getElementById('Wurzburg').checked == true){
         d3.select('.wur_hum').attr('opacity' , 1)
         d3.select('.wur_temp').attr('opacity' , 1)
@@ -97,6 +90,27 @@ function checkfunc2(){
             d3.select('.wur_temp').attr('opacity' , 0)}
 
 }
+
+function checkfunc3(){
+
+    //check temperature checkbox
+    if (document.getElementById('temperature').checked == true){
+        d3.select('.sch_temp').attr('opacity' , 1)
+        d3.select('.wur_temp').attr('opacity', 1)
+    }
+    else{d3.select('.sch_temp').attr('opacity' , 0)
+        d3.select('.wur_temp').attr('opacity', 0)}
+
+    //check humidity checkbox
+    if (document.getElementById('humidity').checked == true){
+        d3.select('.wur_hum').attr('opacity' , 1)
+        d3.select('.sch_hum').attr('opacity' , 1)
+    }
+    else{d3.select('.wur_hum').attr('opacity' , 0)
+        d3.select('.sch_hum').attr('opacity' , 0)}
+
+}
+
 
 function drawLineChart()
 {
