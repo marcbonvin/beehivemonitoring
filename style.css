@@ -7,6 +7,9 @@ body {
     background-color: #f1f1f1;
   }
 
+.charts {
+  margin-left: 20px;
+}
 
 .weight checkboxes {
     font: small-caps 1rem sans-serif;
@@ -22,38 +25,35 @@ body {
     position: relative;
   }
   
-.topleft {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 30px;
-  }
-  
 img { 
     width: 100%;
     height: auto;
     opacity: 1;
   }
 
-  svg {
+svg {
     border:1px solid gray;
-    border-radius:10px;
+    border-radius:5px;
     margin:5px;
   }
-  input {
-    width:50px;
+
+input {
+    width:50;
   }
+
+input[type=checkbox]
   
-  html {
+html {
     font-family: 'Trebuchet MS', sans-serif;
   }
-  .grid line {
+
+.grid line {
     stroke:gray;
     stroke-opacity: 0.5;
     stroke-dasharray: 5,10;
   }
   
-  .grid path {
+.grid path {
     stroke-width: 0;
   }
 
