@@ -8,18 +8,14 @@ body {
   }
 
 
-.weight {
-    border: 2px solid rgb(255, 230, 6);
-    background-color: #f1f1f1;
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
+.weight checkboxes {
+    font: small-caps 1rem sans-serif;
+    text-align: left;
 }
 
-
-.weight checkboxes {
-    font: small-caps bold 1.2rem sans-serif;
-    text-align: left;
+.temp_hum checkboxes {
+  font: small-caps 1rem sans-serif;
+  text-align: left;
 }
 
 .container {
@@ -47,6 +43,7 @@ img {
   input {
     width:50px;
   }
+  
   html {
     font-family: 'Trebuchet MS', sans-serif;
   }
@@ -60,7 +57,3 @@ img {
     stroke-width: 0;
   }
 
-  #wrapper {
-    margin:auto;
-    width:1440px;
-  }

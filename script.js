@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     checkfunc()
     drawLineChart()
+    checkfunc2()
+    drawLineChart2()
 
     });
 
