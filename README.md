@@ -7,7 +7,9 @@ Dans le cadre du cours "visulisation de données" enseigné par le professeur Is
 
 **Explication de la visualisation:**
 
-Nous avons décidé de séparer les données du poids de celles de la température et de l'humidité. En effet, le poids est une variable importante pour l'apiculteur. L'évolution de ce dernier permet de détecter rapidement certains problèmes qui surviennent (essaimage, pillage, ...). Il aide également à choisir le moment de la récolte du miel et les périodes lors desquelles la ruche doit être nourrie (périodes froides, météo peu clémente, ...). Si la ruche **Wurzburg** suit une évolution logique du poids au fil des saisons, la ruche **Schwartau** présente quelques faits intéressants. Nous pouvons constater une chute abruptes en juin, août et novembre. Ces évènements peuvent correspondre à la récolte du miel par l'appiculteur (juin/aôut) et à la préparation de la ruche pour l'hiver (novembre). Les augmentations rapides des mois d'août, septembre et octobre (+/- 5kg) correspondent quand à eux au nourrissages de la ruche. 
+Nous avons décidé de séparer les données du poids de celles de la température et de l'humidité. En effet, le poids est une variable importante pour l'apiculteur. L'évolution de ce dernier permet de détecter rapidement certains problèmes qui surviennent (essaimage, pillage, ...). Il aide également à choisir le moment de la récolte du miel et les périodes lors desquelles la ruche doit être nourrie (périodes froides, météo peu clémente, ...). 
+
+Si la ruche **Wurzburg** suit une évolution logique du poids au fil des saisons, la ruche **Schwartau** présente quelques faits intéressants. Nous pouvons constater une chute abruptes en juin, août et novembre. Ces évènements peuvent correspondre à la récolte du miel par l'appiculteur (juin/aôut) et à la préparation de la ruche pour l'hiver (novembre). Les augmentations rapides des mois d'août, septembre et octobre (+/- 5kg) correspondent quant à eux au nourrissages de la ruche. 
 
 <img width="1222" alt="Capture d’écran 2022-06-06 à 13 58 17" src="https://user-images.githubusercontent.com/81250617/172156527-03378e17-a291-4cd5-b0ef-fc3fa2f69750.png">
 
