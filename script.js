@@ -71,43 +71,34 @@ function checkfunc(){
 
 }
 
+
 function checkfunc2(){
 
-    //check for Schwartau checkbox
-    if (document.getElementById('Schwartau').checked == true){
-        d3.select('.sch_hum').attr('opacity' , 1)
+    // Temperature Schwartau
+    if ((document.getElementById('Schwartau').checked == true) && (document.getElementById('temperature').checked == true)){
         d3.select('.sch_temp').attr('opacity' , 1)
     }
-    else{  d3.select('.sch_hum').attr('opacity' , 0)
-            d3.select('.sch_temp').attr('opacity' , 0)}
+    else{d3.select('.sch_temp').attr('opacity' , 0)}
+        
 
-    //check for Wurzburg checkbox
-    if (document.getElementById('Wurzburg').checked == true){
-        d3.select('.wur_hum').attr('opacity' , 1)
+    // Temperature Wurzburg
+    if ((document.getElementById('Wurzburg').checked == true) && (document.getElementById('temperature').checked == true)){
         d3.select('.wur_temp').attr('opacity' , 1)
     }
-    else{  d3.select('.wur_hum').attr('opacity' , 0)
-            d3.select('.wur_temp').attr('opacity' , 0)}
+    else{d3.select('.wur_temp').attr('opacity' , 0)}
 
-}
-
-function checkfunc3(){
-
-    //check temperature checkbox
-    if (document.getElementById('temperature').checked == true){
-        d3.select('.sch_temp').attr('opacity' , 1)
-        d3.select('.wur_temp').attr('opacity', 1)
-    }
-    else{d3.select('.sch_temp').attr('opacity' , 0)
-        d3.select('.wur_temp').attr('opacity', 0)}
-
-    //check humidity checkbox
-    if (document.getElementById('humidity').checked == true){
-        d3.select('.wur_hum').attr('opacity' , 1)
+    // Humidity Schwartau
+    if ((document.getElementById('Schwartau').checked == true) && (document.getElementById('humidity').checked == true)){
         d3.select('.sch_hum').attr('opacity' , 1)
     }
-    else{d3.select('.wur_hum').attr('opacity' , 0)
-        d3.select('.sch_hum').attr('opacity' , 0)}
+    else{d3.select('.sch_hum').attr('opacity' , 0)}
+
+    // Humidity Wurzburg
+    if ((document.getElementById('Wurzburg').checked == true) && (document.getElementById('humidity').checked == true)){
+        d3.select('.wur_hum').attr('opacity' , 1)
+    }
+    else{d3.select('.wur_hum').attr('opacity' , 0)}
+
 
 }
 

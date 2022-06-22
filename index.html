@@ -21,7 +21,18 @@
     <!-- WEIGHT CHART -->
 
     <div class="charts">
+        
+        <div class="intro">
+            <p>Dans le cadre du cours "visualisation de données" enseigné par le professeur Isaac Pante à l'Université de Lausanne, nous avons créé deux "linechart" (graphiques linéaires) interactifs. 
+                Le but de ce projet est de s'intéresser à trois type de données essentiels pour un apiculteur. 
+                Il s'agit de la température, du poids et de l'humidité qui reigne dans la ruche. Ces données sont récoltées à l'aide de capteurs qui sont intégrés à la ruche et permettent à l'apiculteur de s'assurer de la bonne santé de la colonie. 
+                Pour ce projet, nous avons utilisé des données issues de deux ruches (<a href="https://www.kaggle.com/datasets/se18m502/bee-hive-metrics">Schwartau et Wurzburg</a>) qui se trouvent en Allemagne, mais à terme nous aimerions pouvoir réutiliser le script afin de pouvoir visualiser les données produites par notre propre rucher en Valais.<br><br>
+                Retrouvez le projet sur notre page <a href="https://github.com/marcbonvin/beehivemonitoring">GitHub</a>.</p>
+        </div>
+
     <h1>WEIGHT EVOLUTION</h1>
+        
+        <p>Le premier graphique permet de comparer le poids des ruches au cours de l'année 2018. En cochant/décochant les cases, vous pouvez faire apparaître/disparaître les données respectives.</p>
         <div class="weight">
         <checkboxes>
             <input type="checkbox" id="sch_weight" onclick="checkfunc()"
@@ -33,20 +44,25 @@
         </checkboxes>
         </div>
         
+        
 <!-- TEMPERATURE AND HUMIDITY CHART -->
     
     <h1>TEMPERATURE AND HUMIDITY EVOLUTION</h1>
+
+        <p>Le deuxième graphique permet de comparer l'humidité et la tempréature, de façon séparée pour chaque ruche ou entre les deux ruches. Veuillez choisir les données qui vous intéressent :
+
+        </p>
         <div class="temp_hum">
         <checkboxes>
-            <input type="checkbox"  id="Schwartau" onclick="checkfunc2()" checked="true"> Schwartau
-            <input type="checkbox"  id="temperature" onclick="checkfunc3()" checked="true">Temperature<br>
+            <input type="checkbox"  id="Schwartau" onclick="checkfunc2()" checked="true">Schwartau
+            <input type="checkbox"  id="temperature" onclick="checkfunc2()" checked="true">Temperature<br>
             <input type="checkbox"  id="Wurzburg" onclick="checkfunc2()" checked="true">Wurzburg
-            <input type="checkbox"  id="humidity" onclick="checkfunc3()" checked="true">Humidity<br>
+            <input type="checkbox"  id="humidity" onclick="checkfunc2()" checked="true">Humidity<br>
 
         </checkboxes>
         </div>
 
     </div>
-    
+
 </body>
 </html>
