@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     drawLineChart()
     checkfunc2()
     drawLineChart2()
-    checkfunc3()
 
     });
 
@@ -106,12 +105,16 @@ function checkfunc2(){
 function drawLineChart()
 {
     var svg = d3.select(".weight")
+    .append("div")
+    .classed("svg-container", true)
     .append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 " + 1200 + " " + 600)
+    .classed("svg-content-responsive", true)
     .append('g')
         .attr('transform', 
             'translate(' + margin.left + ',' + margin.top +')');
+    
     
     var x = d3.scaleTime()
         .domain([min_date , max_date])
@@ -162,6 +165,7 @@ function drawLineChart()
        )
 
         prev = 0;
+        
     svg.append('path')
     .datum(wur_weight)
     .attr('class' , 'wur_weight')
@@ -220,13 +224,16 @@ function drawLineChart2()
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-    var svg = d3.select(".temp_hum").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    var svg = d3.select(".temp_hum")
+    .append("div")
+    .classed("svg-container", true)
+    .append("svg")
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 " + 1200 + " " + 600)
     .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
-          
+
           
     // Scale the range of the data
     x.domain([min_date , max_date]);
